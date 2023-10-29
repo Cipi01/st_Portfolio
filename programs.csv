@@ -1,4 +1,4 @@
 NrCrt,Name,ImgPath,Desc,Link
-1,Web scraper,imgs/ProjectsPres/WebScraper.png,"""Un program care preia datele de pe diferite site-uri de vânzări, direct din APIul acestora, le filtrează pentru a ajunge la datele dorite, iar mai le introduce într-o baza de date MySQL. Acest program este format din mai
+1,Web scraper,imgs/ProjectsPres/WebScraperPython.png,"""Un program care preia datele de pe diferite site-uri de vânzări, direct din APIul acestora, le filtrează pentru a ajunge la datele dorite, iar mai le introduce într-o baza de date MySQL. Acest program este format din mai
 multe sub-programe.""",***INSERT LINK***
-2,Index status,imgs/ProjectsPres/IndexStatus.png,"""Un program în curs de dezvoltare, care urmărește sa preia datele de pe site-urile distribuitorilor de utilități, în funcție de cerințele utilizatorului, urmând să extraga perioada auto-citirii index-ului în scopul atenționării utilizatorului pe timpul acesteia.""",***INSERT LINK***
+2,Utility helper,imgs/ProjectsPres/IndexStatus.png,"""Un program în curs de dezvoltare, care urmărește sa preia datele de pe site-urile distribuitorilor de utilități, în funcție de cerințele utilizatorului, urmând să extraga perioada auto-citirii index-ului în scopul atenționării utilizatorului pe timpul acesteia.""","https://github.com/Cipi01/Utility-Helper"

@@ -2,13 +2,15 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 
-#st.set_page_config(layout='wide')
+st.set_page_config(
+    page_title= "Portofoliu"
+)
 col1, col2 = st.columns(2)
 me_image = Image.open('imgs/eu.jpg')
 
 col1.image(me_image, use_column_width=True)
 col2.header("Capătă Ciprian")
-col2.info("""Fost ofițer în cadrul Forțelor Terestre ale Armatei Române, cu o experiență limitată dar aprofundată în 
+col2.info("""Curent ofițer în cadrul Forțelor Terestre ale Armatei Române, cu o experiență limitată dar aprofundată în 
 cadrul managementului logisticii și cu o pasiune pentru sectorul IT, în special software. Mă consider o persoană 
 pro-activă, ambițioasă în cadrul atât al muncii prestate cât și al proiectelor personale, cu o gândire analitică, 
 logică și îndreptată în special înspre partea de automatizare.""")
@@ -25,14 +27,14 @@ with col1:
         st.image(row['ImgPath'])
         st.markdown(f"<h4 style='text-align: justify; color: white;font-size: 16px;'>{row['Desc']} </h4>",
                     unsafe_allow_html=True)
-        st.link_button("For code", row['Link'])
+        st.link_button("Detalii", row['Link'])
 with col2:
     for index, row in df[df_len:].iterrows():
         st.subheader(row['Name'])
         st.image(row['ImgPath'])
         st.markdown(f"<h4 style='text-align: justify; color: white;font-size: 16px;'>{row['Desc']} </h4>",
                     unsafe_allow_html=True)
-        st.link_button("For code", row['Link'])
+        st.link_button("Pagina de GitHub", row['Link'])
 
 st.divider()
 st.header("Diplome relevante")
@@ -44,3 +46,5 @@ for index, row in df_cert.iterrows():
     col1,col2,col3 = st.columns([1,2,4])
     with col3:
         st.link_button("URL", row['CertfUrl'])
+
+        # Todo: separate for webscrapers, picture of logo of site for image, another .csv
